@@ -30,7 +30,7 @@ public class cursoController {
 	public Curso getCursoid(@PathVariable long id) {
 		return repository.getById(id);
 	}
-	@PostMapping("/cursoadicionar")
+	@PostMapping("/curso")
 	public Curso salvarcurso(@RequestBody Curso curso) {
 		return repository.save(curso);
 	}
